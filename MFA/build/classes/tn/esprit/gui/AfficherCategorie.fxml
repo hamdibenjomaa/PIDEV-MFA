@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.gui.AfficherCategorieController">
+   <AnchorPane id="AnchorPane" layoutX="20.0" layoutY="20.0" prefHeight="606.0" prefWidth="910.0" style="-fx-background-color: #34568B;">
+      <children>
+         <AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="1178.0">
+            <children>
+               <HBox layoutX="-1.0" layoutY="-2.0" prefHeight="608.0" prefWidth="1186.0">
+                  <children>
+                     <VBox prefHeight="608.0" prefWidth="199.0" style="-fx-background-color: #222a35;">
+                        <children>
+                           <Pane prefHeight="163.0" prefWidth="209.0" style="-fx-background-color: #222a35;">
+                              <children>
+                                 <ImageView fitHeight="129.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@../../../../../abdo/PidevJ3A40/src/image/325349369_689191806267110_8316241308021983028_n.png" />
+                                    </image>
+                                 </ImageView>
+                              </children>
+                           </Pane>
+                           <Button fx:id="home" mnemonicParsing="false" prefHeight="57.0" prefWidth="209.0" text="Home" />
+                           <Button fx:id="evc" mnemonicParsing="false" prefHeight="57.0" prefWidth="209.0" text="Event" />
+                           <Button fx:id="ev" mnemonicParsing="false" prefHeight="71.0" prefWidth="209.0" text="Event Categorie" />
+                           <Button fx:id="s" mnemonicParsing="false" onAction="#RedirectionS" prefHeight="57.0" prefWidth="209.0" text="Suppliers" />
+                           <Button fx:id="c" mnemonicParsing="false" onAction="#RedirectionCategorieS" prefHeight="57.0" prefWidth="209.0" text="Suppliers Categorie" />
+                        </children>
+                     </VBox>
+                     <Pane prefHeight="583.0" prefWidth="977.0">
+                        <children>
+                           <Pane prefHeight="47.0" prefWidth="987.0" style="-fx-background-color: #222a35;">
+                              <children>
+                                 <Label layoutX="349.0" layoutY="6.0" prefHeight="39.0" prefWidth="278.0" text="Admin Dashboard" textFill="#ff6600" textOverrun="LEADING_ELLIPSIS">
+                                    <font>
+                                       <Font size="27.0" />
+                                    </font>
+                                 </Label>
+                              </children>
+                           </Pane>
+                            <TableView fx:id="categoriesTable" layoutX="193.0" layoutY="171.0" prefHeight="365.0" prefWidth="524.0">
+                                <columns>
+                                    <TableColumn fx:id="libelleColumn" prefWidth="259.0" text="Libellé" />
+                                    <TableColumn fx:id="actionColumn" prefWidth="264.0" text="Actions" />
+                                </columns>
+                            </TableView>
+                           <Button fx:id="btAjoutC" layoutX="329.0" layoutY="134.0" mnemonicParsing="false" onAction="#RedirectionAjouter" prefHeight="25.0" prefWidth="251.0" text="Ajouter Une Categorie" textFill="#0cdad3" />
+                           <Label layoutX="294.0" layoutY="65.0" prefHeight="39.0" prefWidth="322.0" text="Supplier's categories list" textFill="WHITE">
+                              <font>
+                                 <Font size="29.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </Pane>
+                  </children>
+               </HBox>
+            </children>
+         </AnchorPane>
+      </children>
+   </AnchorPane>
+</AnchorPane>

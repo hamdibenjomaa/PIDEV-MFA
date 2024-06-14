@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.gui.AjouterUneCategorieController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="606.0" prefWidth="910.0" style="-fx-background-color: #34568B;">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="1178.0">
+               <children>
+                  <HBox layoutX="-1.0" layoutY="-2.0" prefHeight="608.0" prefWidth="1186.0">
+                     <children>
+                        <VBox prefHeight="608.0" prefWidth="199.0" style="-fx-background-color: #222a35;">
+                           <children>
+                              <Pane prefHeight="163.0" prefWidth="209.0" style="-fx-background-color: #222a35;">
+                                 <children>
+                                    <ImageView fitHeight="129.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../abdo/PidevJ3A40/src/image/325349369_689191806267110_8316241308021983028_n.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Button fx:id="home" mnemonicParsing="false" prefHeight="57.0" prefWidth="209.0" text="Home" />
+                              <Button fx:id="evc" mnemonicParsing="false" prefHeight="57.0" prefWidth="209.0" text="Event" />
+                              <Button fx:id="ev" mnemonicParsing="false" prefHeight="71.0" prefWidth="209.0" text="Event Categorie" />
+                              <Button fx:id="s" mnemonicParsing="false" onAction="#RedirectionS" prefHeight="57.0" prefWidth="209.0" text="Suppliers" />
+                              <Button fx:id="c" mnemonicParsing="false" onAction="#RedirectionCategorieS" prefHeight="57.0" prefWidth="209.0" text="Suppliers Categorie" />
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="583.0" prefWidth="977.0">
+                           <children>
+                              <Pane prefHeight="47.0" prefWidth="987.0" style="-fx-background-color: #222a35;">
+                                 <children>
+                                    <Label layoutX="376.0" layoutY="4.0" prefHeight="39.0" prefWidth="221.0" text="Admin Dashboard" textFill="#ff6600" textOverrun="LEADING_ELLIPSIS">
+                                       <font>
+                                          <Font size="27.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <TextField fx:id="tfLibelle" layoutX="456.0" layoutY="212.0" prefHeight="25.0" prefWidth="185.0" />
+                              <Button fx:id="btnAjouter" layoutX="389.0" layoutY="279.0" mnemonicParsing="false" onAction="#AjouterCategorie" prefHeight="25.0" prefWidth="134.0" text="Add" />
+                              <Label layoutX="337.0" layoutY="211.0" prefHeight="27.0" prefWidth="75.0" text="Libelle" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="352.0" layoutY="82.0" prefHeight="39.0" prefWidth="322.0" text="Add a new categorie" textFill="WHITE">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.gui.UpdateFournisseurController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="606.0" prefWidth="910.0" style="-fx-background-color: #34568B;">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="1178.0">
+               <children>
+                  <HBox layoutX="-1.0" layoutY="-2.0" prefHeight="608.0" prefWidth="1186.0">
+                     <children>
+                        <VBox prefHeight="608.0" prefWidth="199.0" style="-fx-background-color: #222a35;">
+                           <children>
+                              <Pane prefHeight="163.0" prefWidth="209.0" style="-fx-background-color: #222a35;">
+                                 <children>
+                                    <ImageView fitHeight="129.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../abdo/PidevJ3A40/src/image/325349369_689191806267110_8316241308021983028_n.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Button fx:id="home" mnemonicParsing="false" prefHeight="57.0" prefWidth="209.0" text="Home" />
+                              <Button fx:id="evc" mnemonicParsing="false" prefHeight="57.0" prefWidth="209.0" text="Event" />
+                              <Button fx:id="ev" mnemonicParsing="false" prefHeight="71.0" prefWidth="209.0" text="Event Categorie" />
+                              <Button fx:id="s" mnemonicParsing="false" onAction="#RedirectionS" prefHeight="57.0" prefWidth="209.0" text="Suppliers" />
+                              <Button fx:id="c" mnemonicParsing="false" onAction="#RedirectionCategorieS" prefHeight="57.0" prefWidth="209.0" text="Suppliers Categorie" />
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="583.0" prefWidth="977.0">
+                           <children>
+                              <Pane prefHeight="47.0" prefWidth="987.0" style="-fx-background-color: #222a35;">
+                                 <children>
+                                    <Label layoutX="381.0" layoutY="4.0" prefHeight="39.0" prefWidth="216.0" text="Admin Dashboard" textFill="#ff6600" textOverrun="LEADING_ELLIPSIS">
+                                       <font>
+                                          <Font size="27.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <AnchorPane id="AnchorPane" fx:id="rootPane" layoutX="164.0" layoutY="47.0" prefHeight="400.0" prefWidth="600.0">
+                                 <children>
+                                    <TextField fx:id="tfNom" layoutX="302.0" layoutY="105.0" />
+                                    <TextField fx:id="tfTel" layoutX="302.0" layoutY="135.0" />
+                                    <TextField fx:id="tfAddress" layoutX="302.0" layoutY="165.0" />
+                                    <TextField fx:id="tfEmail" layoutX="302.0" layoutY="195.0" />
+                                    <TextField fx:id="tfSiteWeb" layoutX="302.0" layoutY="225.0" />
+                                    <Label layoutX="237.0" layoutY="32.0" text="Update Supplier" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="194.0" layoutY="109.0" prefHeight="27.0" prefWidth="75.0" text="Nom" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="194.0" layoutY="135.0" prefHeight="27.0" prefWidth="91.0" text="Telephone" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="194.0" layoutY="163.0" prefHeight="27.0" prefWidth="75.0" text="Address" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="194.0" layoutY="192.0" prefHeight="27.0" prefWidth="75.0" text="Email" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="194.0" layoutY="222.0" prefHeight="27.0" prefWidth="75.0" text="Site web" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="194.0" layoutY="254.0" prefHeight="27.0" prefWidth="75.0" text="Image" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="194.0" layoutY="283.0" prefHeight="27.0" prefWidth="91.0" text="Categorie" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="boxCategorie" layoutX="302.0" layoutY="286.0" prefWidth="150.0" />
+                                    <Button fx:id="ModifierF" layoutX="244.0" layoutY="318.0" mnemonicParsing="false" onAction="#ModifierFournisseur" prefHeight="25.0" prefWidth="150.0" text="Update" />
+                                    <Button fx:id="AjouterImg" layoutX="302.0" layoutY="255.0" mnemonicParsing="false" onAction="#AjouterImage" prefHeight="25.0" prefWidth="150.0" text="import " />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

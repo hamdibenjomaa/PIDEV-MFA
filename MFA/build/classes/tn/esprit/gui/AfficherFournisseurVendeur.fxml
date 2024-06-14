@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.gui.AfficherFournisseurVendeurController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="606.0" prefWidth="910.0" style="-fx-background-color: #34568B;">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="1178.0">
+               <children>
+                  <HBox layoutX="-1.0" layoutY="-2.0" prefHeight="608.0" prefWidth="1186.0">
+                     <children>
+                        <VBox prefHeight="608.0" prefWidth="199.0" style="-fx-background-color: #222a35;">
+                           <children>
+                              <Pane prefHeight="163.0" prefWidth="209.0" style="-fx-background-color: #222a35;">
+                                 <children>
+                                    <ImageView fitHeight="129.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../abdo/PidevJ3A40/src/image/325349369_689191806267110_8316241308021983028_n.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Button fx:id="home" mnemonicParsing="false" prefHeight="57.0" prefWidth="209.0" text="Home" />
+                              <Button fx:id="evc" mnemonicParsing="false" prefHeight="57.0" prefWidth="209.0" text="Event" />
+                              <Button fx:id="ev" mnemonicParsing="false" prefHeight="71.0" prefWidth="209.0" text="Event Categorie" />
+                              <Button fx:id="s" mnemonicParsing="false" onAction="#RedirectionS" prefHeight="57.0" prefWidth="209.0" text="Suppliers" />
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="583.0" prefWidth="977.0">
+                           <children>
+                              <Pane prefHeight="47.0" prefWidth="987.0" style="-fx-background-color: #222a35;">
+                                 <children>
+                                    <Label layoutX="390.0" layoutY="4.0" prefHeight="21.0" prefWidth="207.0" text="Seller Dashboard" textFill="#ff6600" textOverrun="LEADING_ELLIPSIS">
+                                       <font>
+                                          <Font size="27.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Button fx:id="btQR" layoutX="619.0" layoutY="469.0" mnemonicParsing="false" onAction="#QrCode" text="QR Code" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="AnchorPane" layoutX="-17.0" prefHeight="400.0" prefWidth="648.0">
+         <children>
+            <TableView fx:id="categoriesTable" layoutX="282.0" layoutY="197.0" prefHeight="160.0" prefWidth="878.0">
+               <columns>
+                  <TableColumn fx:id="NomColumn" prefWidth="84.0" text="Nom" />
+                  <TableColumn fx:id="CategorieColumn" prefWidth="77.0" text="Categorie" />
+                  <TableColumn fx:id="AddressColumn" prefWidth="102.0" text="Address" />
+                  <TableColumn fx:id="EmailColumn" minWidth="0.0" prefWidth="150.0" text="Email" />
+                  <TableColumn fx:id="TelColumn" prefWidth="90.0" text="Tel" />
+                  <TableColumn fx:id="SiteWebColumn" prefWidth="157.0" text="Site Web" />
+                  <TableColumn fx:id="ImgColumn" prefWidth="157.0" text="Image" />
+               </columns>
+            </TableView>
+            <TextField fx:id="tfRecherche" layoutX="604.0" layoutY="158.0" promptText="search" />
+            <ImageView fx:id="imageqr" fitHeight="100.0" fitWidth="121.0" layoutX="812.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="629.0" layoutY="72.0" prefHeight="43.0" prefWidth="240.0" text="Suppliers list" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

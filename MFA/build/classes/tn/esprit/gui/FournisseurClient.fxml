@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.gui.FournisseurClientController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="606.0" prefWidth="910.0" style="-fx-background-color: #34568B;">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="1178.0">
+               <children>
+                  <HBox layoutX="-1.0" layoutY="-2.0" prefHeight="608.0" prefWidth="1186.0">
+                     <children>
+                        <VBox prefHeight="608.0" prefWidth="199.0" style="-fx-background-color: #222a35;">
+                           <children>
+                              <Pane prefHeight="163.0" prefWidth="209.0" style="-fx-background-color: #222a35;">
+                                 <children>
+                                    <ImageView fitHeight="129.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../abdo/PidevJ3A40/src/image/325349369_689191806267110_8316241308021983028_n.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Button fx:id="home" mnemonicParsing="false" prefHeight="57.0" prefWidth="209.0" text="Home" />
+                              <Button fx:id="evc" mnemonicParsing="false" prefHeight="57.0" prefWidth="209.0" text="Event" />
+                              <Button fx:id="ev" mnemonicParsing="false" prefHeight="71.0" prefWidth="209.0" text="Event Categorie" />
+                              <Button fx:id="s" mnemonicParsing="false" onAction="#RedirectionS" prefHeight="57.0" prefWidth="209.0" text="Suppliers" />
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="583.0" prefWidth="977.0">
+                           <children>
+                              <Pane prefHeight="47.0" prefWidth="987.0" style="-fx-background-color: #222a35;">
+                                 <children>
+                                    <Label layoutX="390.0" layoutY="4.0" prefHeight="21.0" prefWidth="207.0" text="Mall For All" textFill="#ff6600" textOverrun="LEADING_ELLIPSIS">
+                                       <font>
+                                          <Font size="27.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <GridPane fx:id="Grid" layoutX="156.0" layoutY="134.0" prefHeight="324.0" prefWidth="600.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                              </GridPane>
+                              <Label layoutX="354.0" layoutY="72.0" prefHeight="53.0" prefWidth="230.0" text="List Of Suppliers" textFill="WHITE">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
